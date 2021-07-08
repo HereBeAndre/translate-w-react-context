@@ -7,7 +7,7 @@ const Field = () => {
     <div className="ui field">
       <label>
         <LanguageContext.Consumer>
-          {(language) => renderLabel(language)}
+          {({ language }) => renderLabel(language)}
         </LanguageContext.Consumer>
       </label>
       <input />
